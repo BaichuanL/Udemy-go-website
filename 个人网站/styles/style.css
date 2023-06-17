@@ -1,0 +1,192 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+body nav {
+  background-color: white;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+}
+body nav ul {
+  display: flex;
+}
+body nav ul li {
+  list-style-type: none;
+  margin: 1rem;
+}
+body nav ul li a {
+  color: black;
+  text-decoration: none;
+  transition: all 0.1s ease;
+}
+body nav ul li a:hover {
+  color: rgb(54, 212, 138);
+}
+body main section.main-area {
+  min-height: 70vh;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+body main section.main-area div.info {
+  flex-basis: 450px;
+}
+body main section.main-area div.info h1 {
+  font-size: 3.5rem;
+}
+body main section.main-area div.info h2 {
+  font-size: 1rem;
+  padding-left: 1rem;
+}
+body main section.main-area div.info a {
+  color: white;
+  background-color: rgb(54, 212, 138);
+  padding: 0.35rem 1rem;
+  font-size: 1.5rem;
+  border-radius: 20px;
+  display: inline-block;
+  margin-top: 2rem;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+body main section.main-area div.info a:hover {
+  transform: scale(1.2);
+}
+body main section.main-area img {
+  flex-basis: 300px;
+  width: 30vw;
+}
+body main section.about-me {
+  background-color: rgb(231, 255, 233);
+  padding: 5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body main section.about-me div.desc {
+  width: 50%;
+  text-align: center;
+}
+body main section.about-me div.desc h2 {
+  font-size: 2rem;
+}
+body main section.about-me div.desc p {
+  text-align: left;
+  text-indent: 1rem;
+}
+body main section.about-me div.progress-area p {
+  margin: 0.5rem 0rem;
+}
+body main section.about-me div.progress-area .progress-bar-area {
+  margin-top: 2rem;
+}
+body main section.resume {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem;
+}
+body main section.resume section.table {
+  flex: 5 1 500px;
+  padding: 2rem;
+}
+body main section.resume section.table table {
+  border-collapse: collapse;
+}
+body main section.resume section.table table tr {
+  border-bottom: 2px solid gray;
+  transition: all 0.2s ease;
+}
+body main section.resume section.table table tr:hover {
+  background-color: rgb(184, 255, 222);
+}
+body main section.resume section.table table tr td {
+  padding: 1rem;
+}
+body main section.resume section.picture {
+  flex: 1 1 500px;
+  position: relative;
+}
+body main section.resume section.picture img {
+  width: 30vw;
+}
+body main section.resume section.picture div.greenRect {
+  width: 30vw;
+  height: 90vh;
+  border: 10px solid rgb(195, 255, 200);
+  position: absolute;
+  top: 30px;
+  left: 80px;
+  z-index: -1;
+}
+body main section.resume section.picture div.greenRect2 {
+  width: 50vw;
+  height: 40vh;
+  border: 10px solid rgb(195, 255, 200);
+  position: absolute;
+  top: 300px;
+  left: -300px;
+  z-index: -1;
+}
+body main section.resume section.picture div.greenRect3 {
+  width: 50vw;
+  height: 40vh;
+  border: 10px solid rgb(195, 255, 200);
+  position: absolute;
+  top: 0px;
+  left: -100px;
+  z-index: -1;
+}
+
+@media screen and (max-width: 800px) {
+  body main section.main-area div.info {
+    padding: 1rem;
+  }
+  body main section.main-area img {
+    width: 90%;
+  }
+  body main section.about-me {
+    padding: 1rem 0.5rem;
+  }
+  body main section.about-me div.desc {
+    width: 80%;
+  }
+  body main section.about-me div.progress-area {
+    width: 80%;
+  }
+  body main section.resume {
+    overflow-x: auto;
+  }
+  body main section.resume section.table {
+    min-width: 800px;
+  }
+  body main section.resume section.picture img {
+    width: 90%;
+  }
+  body main section.resume section.picture div.greenRect,
+  body main section.resume section.picture div.greenRect2,
+  body main section.resume section.picture div.greenRect3 {
+    display: none;
+  }
+}
+@media screen and (max-width: 500px) {
+  body nav {
+    position: static;
+  }
+  body nav ul {
+    flex-direction: column;
+  }
+}/*# sourceMappingURL=style.css.map */

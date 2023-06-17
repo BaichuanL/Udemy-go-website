@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+        google.charts.load('current', { 'packages': ['corechart'] });
+        google.charts.setOnLoadCallback(drawChart);
+
+        function drawChart() {
+
+            var data = google.visualization.arrayToDataTable([
+                ['棋赛', '奖金(日元)'],
+                ['棋圣', 45000000],
+                ['十段', 7000000],
+                ['本因坊', 28000000],
+                ['碁圣', 8000000],
+                ['名人', 30000000],
+                ['王座', 14000000],
+                ['天元', 13000000],
+            ]);
+
+            var options = {
+                title: '日本七大棋院奖金分布图'
+            };
+
+            var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+            chart.draw(data, options);
+        }
+    </script>
+    <title>围棋信息网</title>
+</head>
+
+<body>
+    <header>
+        <div class="top">
+            <h1>围棋信息网</h1>
+            <h3>
+                围棋是一种策略棋类，使用格状棋盘及黑白二色棋子进行对弈。 起源于中国，中国古时有「弈」、「碁」、「手谈」等多种称谓，属琴棋书画四艺。
+            </h3>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="./index.html">网站首页</a></li>
+                <li><a href="./korea.html">韩国棋院</a></li>
+                <li><a class="active" href="#">日本棋院</a></li>
+                <li><a href="./china.html">中国棋院</a></li>
+                <li><a href="./taiwan.html">海峰棋院</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <div class="japan">
+                <img src="./images/Nihon_Ki-in_Headquarter_(2016-05-05)_5.jpg" alt="日本棋院">
+                <div class="info">
+                    <p>
+                        日本棋院（日語：一般公益法人日本棋院/いっぱんこうえきほうじんにほんきいん Ippankōekihōjin Nihon kiin），是日本最大的围棋管理组织，并负责组织各种棋战。
+                        总部位于东京都千代田区，另在名古屋和大阪设有中部和关西总本部。 目前，日本棋院辖下棋士约300名。
+                    </p>
+                    <p>
+                        日本棋院成立于1924年，由当时最大的两个围棋组织本因坊门和方圆社在大仓喜七郎的支持下合并而成。 日本棋院成立后，先后同棋正社、吴清源和围棋新社等组织或个人产生竞争。
+                        1950年，以桥本宇太郎为首的关西部分棋士脱离日本棋院，自创关西棋院。
+                    </p>
+                    <p>
+                        旗下组织有：
+                    </p>
+                    <ul>
+                        <li>东京本院</li>
+                        <li>关西总本部</li>
+                        <li>中部总本部</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="competition">
+                <div class="text">
+                    <h3>日本棋院头衔赛</h3>
+                    <p>
+                        日本围棋七大主要赛事，根据奖金排序是棋圣、名人、本因坊、王座、天元、碁圣和十段。 在这当中奖金较高的三个赛事棋圣、名人、本因坊并称“三大头衔战”。 其中棋圣是最高头衔。
+                        如果同时包揽这三个头衔的话，就被称为“大三冠”。 职业棋手争冠的棋赛有很多，但是争夺七个头衔战的“七大棋战”和其他比赛有什么区别呢？
+                    </p>
+                    <p>
+                        七大棋战的最大特点就是所有棋手都能参加，当然决定挑战者的方式各不相同，名人战和本因坊战是在经过预选后进入循环圈。 进入循环圈就能证明自己已经是一流棋手了。
+                    </p>
+                    <p>
+                        头衔赛的奖金如下：
+                    </p>
+                    <ul>
+                        <li>棋圣：4500万日币</li>
+                        <li>十段：700万日币</li>
+                        <li>本因坊：2800万日币</li>
+                        <li>碁圣：800万日币</li>
+                        <li>名人：3000万日币</li>
+                        <li>王座：1400万日币</li>
+                        <li>天元：1300万日币</li>
+                    </ul>
+                </div>
+                <div id="piechart"></div>
+            </div>
+        </section>
+    </main>
+    <script type="text/javascript" color="0,0,0" opacity="0.3" zIndex="-2" count="99"
+        src="https://cdnjs.cloudflare.com/ajax/libs/canvas-nest.js/2.0.4/canvas-nest.js"
+        integrity="sha512-P+NGabN/TJDOnCVOFJO+E06TBm4i+M8dTT91lWg/8UpwLrzicEXIypmABPpA47D0x6r+yxFHjYIZKWhc1h7xlQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+
+</html>
