@@ -88,6 +88,9 @@ body main section.main-part h1 {
 body main section.main-part p {
   font-size: 1.15rem;
 }
+body main section.main-part div.all-inputs form {
+  white-space: nowrap;
+}
 body main section.main-part div.all-inputs form input,
 body main section.main-part div.all-inputs form select {
   font-size: 1.05rem;
